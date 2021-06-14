@@ -1,0 +1,10 @@
+#! /bin/sh 	 
+ 	 
+ 
+ 	# stop script when an error occurs 
+ 	set -e 
+ 	 
+ 
+ 	psql playdateappdb -q -f "./database/init.sql" 
+ 	echo "Populated database tables" 
+ 

@@ -1,0 +1,16 @@
+#! /bin/bash 
+
+# stop script when an error occurs 
+set -e 
+ 
+ 
+psql -q -c "CREATE USER mariyap SUPERUSER PASSWORD '123'" 
+echo "Created Postgres user 'mariyap'" 
+ 
+ 
+psql -q -c "CREATE DATABASE playdateappdb WITH OWNER mariyap" 
+echo "Created Postgres database 'playdateappdb'" 
+ 
+ 
+cp -r example.env .env 
+echo "Created .env containing DATABASE_URL" 
