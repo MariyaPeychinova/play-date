@@ -6,6 +6,6 @@ context('Login', () => {
     });
 
     it('should find our Sign Up page', () => {
-        cy.get('h1').contains("Chummy")
+        cy.get('h1').contains("Play-Date")
     })
 })

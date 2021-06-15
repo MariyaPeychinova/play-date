@@ -17,6 +17,18 @@
   align-items: center;
 }
 
+.nav {
+  width: 100vw;
+  height: 100px;
+  background-color: #fbba5c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 .footer {
   width: 100%;
   height: 100px;
