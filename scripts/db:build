@@ -5,6 +5,6 @@
  	set -e 
  	 
  
- 	psql playdateappdb -q -f "./database/init.sql" 
+ 	psql playdateapp -q -f "./database/init.sql" 
  	echo "Populated database tables" 
  

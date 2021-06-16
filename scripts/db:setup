@@ -4,12 +4,12 @@
 set -e 
  
  
-psql -q -c "CREATE USER mariyap SUPERUSER PASSWORD '123'" 
-echo "Created Postgres user 'mariyap'" 
+psql -q -c "CREATE USER mary SUPERUSER PASSWORD '123'" 
+echo "Created Postgres user 'mary'" 
  
  
-psql -q -c "CREATE DATABASE playdateappdb WITH OWNER mariyap" 
-echo "Created Postgres database 'playdateappdb'" 
+psql -q -c "CREATE DATABASE playdateapp WITH OWNER mary" 
+echo "Created Postgres database 'playdateapp'" 
  
  
 cp -r example.env .env 
